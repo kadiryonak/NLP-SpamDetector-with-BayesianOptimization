@@ -21,11 +21,8 @@ Contains the implementation of the LSTM model, including:
 - Model training with early stopping to prevent overfitting
 - Bayesian Optimization to find the best hyperparameters for the LSTM model
 
-### 4. Model Evaluation (`model_evaluation.py`)
-Evaluates the trained model on a test set to assess its performance, specifically its accuracy in classifying messages as spam or not spam.
-
-### 5. Utilities (`utils.py`)
-Includes utility functions that might be used across different parts of the project, such as loading data, tokenization, and padding sequences.
+### 4. Utilities and Model Evaluation (`utils.py`)
+Evaluates the trained model on a test set to assess its performance, specifically its accuracy in classifying messages as spam or not spam. Includes utility functions that might be used across different parts of the project, such as loading data, tokenization, and padding sequences.
 
 ## Dependencies
 The project requires the following Python libraries:
