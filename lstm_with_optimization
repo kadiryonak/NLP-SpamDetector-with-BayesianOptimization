@@ -71,3 +71,4 @@ model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy']
 
 # Retraining the model with the best parameters
 model.fit(X_train_pad, y_train, epochs=4, batch_size=32, validation_split=0.2,callbacks = EarlyStopping(monitor='val_loss', patience=3, verbose=1, restore_best_weights=True))
+
