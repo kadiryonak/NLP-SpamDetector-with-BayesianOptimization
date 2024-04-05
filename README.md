@@ -39,5 +39,5 @@ Ensure that you have these installed in your environment before running the proj
 ## Installation
 Clone this repository to your local machine using:
 ```bash
-git clone <repository-url>
+git clone <[repository-url](https://github.com/kadiryonak/NLP-SpamDetector-with-BayesianOptimization)>
 
