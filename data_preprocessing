@@ -1,5 +1,4 @@
 # data_preprocessing.py
-
 import pandas as pd
 import re
 import nltk
@@ -7,15 +6,16 @@ from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer, PorterStemmer
 from sklearn.preprocessing import LabelEncoder
 
-nltk.download('punkt')
-nltk.download('stopwords')
-nltk.download('wordnet')
-
 class DataPreprocessor:
     def __init__(self, file_path):
-        self.file_path = r"C:\Users\kadir\.spyder-py3\spam.csv"
+        self.file_path = file_path
 
     def load_and_preprocess_data(self):
+        # nltk modülleri indiriliyor
+        nltk.download('punkt')
+        nltk.download('stopwords')
+        nltk.download('wordnet')
+
         df = pd.read_csv(self.file_path, encoding='latin-1')
         df.drop_duplicates(inplace=True)
         df['Message'] = df['Message'].apply(lambda x: x.lower()) 
